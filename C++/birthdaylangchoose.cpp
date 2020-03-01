@@ -57,9 +57,8 @@ int main(){
     std::string theLang = langs[randNums(1, 5) - 1];
     std::string theWay = ways[randNums(1, 2) - 1];
     
-    // If it has chosed HTML, since it is a markup language it cannot handle variables.
-    // Thus, overwrite our chosen method by just using <p> tags instead of trying to do
-    // the impossible.
+    // A markup language it cannot handle variables. Thus, if our chosen language is HTML,
+    // overwrite our chosen method by just using <p> tags instead of trying to do the impossible.
     if(theLang == langs[3]){
         theWay = ways[1];
     }
